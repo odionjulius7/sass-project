@@ -4,9 +4,17 @@ import CandidateScore from "./CandidateScore";
 import CandidateTabs from "./CandidateTabs";
 import CandidateTabsDisplay from "./CandidateTabsDisplay";
 import { useState } from "react";
+
 import CandidateEvaluation from "./CandidateEvaluation";
 import Index from "./CandidateTabsDisplay/NotesTab";
 import Index1 from "./CandidateTabsDisplay/LogsTab";
+import CandidateProfile from "./CandidateProfile";
+// =======
+// // import CandidateVideo from "../";
+// // CandidateVideo
+// import CandidateEvaluation from "./CandidateEvaluation";
+// import CandidateProfile from "./CandidateProfile";
+// >>>>>>> 2392467b48e094dd59dbe4a70ca6ed6c009af65b
 const SingleProgramCandidateNav = () => {
 	const [currentTab, setCurrentTab] = useState<number>(1);
 
@@ -41,12 +49,20 @@ const SingleProgramCandidateNav = () => {
 					setCurrentTab(num);
 				}}
 			/>
-			{currentTab === 2 && <CandidateTabsDisplay currentTab={currentTab} />}
+			{currentTab === 1 && <CandidateProfile />}
 
+			{currentTab === 2 && <CandidateTabsDisplay currentTab={currentTab} />}
 			{currentTab === 3 && <CandidateEvaluation />}
 			{currentTab === 4 && <Index />}
 			{currentTab === 6 && <Index1 />}
 		</Box>
 	);
+	// =======
+	//       {currentTab === 2 && <CandidateTabsDisplay currentTab={currentTab} />}
+
+	//       {currentTab === 3 && <CandidateEvaluation />}
+	//     </Box>
+	//   );
+	// >>>>>>> 2392467b48e094dd59dbe4a70ca6ed6c009af65b
 };
 export default SingleProgramCandidateNav;
