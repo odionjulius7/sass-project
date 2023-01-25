@@ -2,6 +2,7 @@ import { Box, Stack } from "@mui/material";
 import CandidateCTA from "./CandidateCTA";
 import CandidateScore from "./CandidateScore";
 import CandidateTabs from "./CandidateTabs";
+import CandidateTabsDisplay from "./CandidateTabsDisplay";
 import { useState } from "react";
 
 const SingleProgramCandidateNav = () => {
@@ -20,6 +21,7 @@ const SingleProgramCandidateNav = () => {
 					setCurrentTab(num);
 				}}
 			/>
+			<CandidateTabsDisplay currentTab={currentTab} />
 		</Box>
 	);
 };
