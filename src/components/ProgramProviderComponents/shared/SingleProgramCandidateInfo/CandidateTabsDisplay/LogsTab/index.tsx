@@ -11,6 +11,9 @@ import {
 } from "@mui/material";
 import { Add, Close } from "@mui/icons-material";
 import React from "react";
+import MessageArea from "./MessageArea";
+import CloseIcon from "@mui/icons-material/Close";
+import AddIcon from "@mui/icons-material/Add";
 
 interface DummyData {
 	autodisqualified: string[];
@@ -18,7 +21,7 @@ interface DummyData {
 	privateNoteOnlyForMyView: boolean;
 }
 
-const Index = (): JSX.Element => {
+const Index1 = (): JSX.Element => {
 	const [state, setState] = React.useState<DummyData>({
 		autodisqualified: [
 			"Have you graduated between 2020 and 2022",
@@ -136,8 +139,118 @@ const Index = (): JSX.Element => {
 				</CardContent>
 			</Card>
 			{/* <MessageArea /> */}
+
+			<Card
+				sx={{
+					borderRadius: 3,
+					border: "1px solid #000000",
+					p: 2,
+					mt: 5,
+					backgroundColor: "#EFFBFF",
+				}}>
+				<CardContent>
+					<Stack direction="row" spacing={2}>
+						<Box sx={{ display: "flex", flexDirection: "column" }}>
+							<Typography
+								variant="caption"
+								sx={{ fontSize: 20, lineHeight: "114%", fontWeight: "600" }}
+								gutterBottom>
+								To
+							</Typography>
+
+							<Stack
+								direction="row"
+								spacing={1}
+								sx={{ margin: "1rem 0", justifyContent: "space-between" }}>
+								<Button
+									variant="text"
+									sx={{
+										display: "flex",
+										margin: "0",
+										background: "white",
+										borderRadius: "100px",
+										fontSize: "12px",
+										fontWeight: 500,
+										height: "30px",
+									}}
+									endIcon={<CloseIcon sx={{ color: "#0000003d" }} />}>
+									Mohammed Ismail
+								</Button>
+								<Button
+									sx={{
+										background: "white",
+										borderRadius: "100px",
+										fontSize: "12px",
+										fontWeight: 500,
+										height: "30px",
+									}}
+									variant="text"
+									endIcon={<CloseIcon sx={{ color: "#0000003d" }} />}>
+									Suhail Salaman
+								</Button>
+								<Button
+									sx={{
+										background: "white",
+										borderRadius: "100px",
+										fontSize: "12px",
+										fontWeight: 500,
+										height: "30px",
+									}}
+									variant="text"
+									endIcon={<CloseIcon sx={{ color: "#0000003d" }} />}>
+									Hohammed
+								</Button>
+								<Button
+									sx={{
+										background: "#000000",
+										color: "#fff",
+										borderRadius: "100px",
+										fontSize: "12px",
+										fontWeight: 500,
+										height: "30px",
+									}}
+									variant="contained"
+									startIcon={<AddIcon sx={{ margin: "0 !important" }} />}>
+									1 more
+								</Button>
+							</Stack>
+
+							<Stack sx={{ margin: "2rem 0" }}>
+								<Typography
+									variant="h2"
+									component="h3"
+									sx={{ margin: "0.5rem 0" }}>
+									Subject
+								</Typography>
+								<Typography variant="h3">Your application status</Typography>
+							</Stack>
+
+							<Stack
+								direction="column"
+								spacing={2}
+								sx={{
+									mt: 1,
+								}}>
+								<Typography variant="h3" sx={{ fontSize: 14, fontWeight: 500 }}>
+									Hi {"{first name}"} ,
+								</Typography>
+								<Typography variant="h3" sx={{ fontSize: 14, fontWeight: 500 }}>
+									Thank you for your interest on our programme, Unfortunately ,
+									we will not be selecting your application to move forward.
+								</Typography>
+								<Typography variant="h3" sx={{ fontSize: 14, fontWeight: 500 }}>
+									Regards, Nan
+								</Typography>
+							</Stack>
+							<Typography variant="caption" sx={{ fontSize: 12, mt: 3 }}>
+								{"Added by Kit"} | {"2023.01.15"}
+							</Typography>
+						</Box>
+					</Stack>
+				</CardContent>
+			</Card>
 		</Box>
 	);
 };
 
-export default Index;
+export default Index1;
