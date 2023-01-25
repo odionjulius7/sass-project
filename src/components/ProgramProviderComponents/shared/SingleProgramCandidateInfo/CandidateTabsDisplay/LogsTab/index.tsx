@@ -1,16 +1,14 @@
+import React from "react";
 import {
 	Typography,
 	Box,
-	FormControlLabel,
-	Checkbox,
-	Button,
 	CardContent,
 	Card,
 	Stack,
 	Avatar,
 } from "@mui/material";
-import { Add, Close } from "@mui/icons-material";
-import React from "react";
+import { Close } from "@mui/icons-material";
+import MessageArea from "./MessageArea";
 
 interface DummyData {
 	autodisqualified: string[];
@@ -135,7 +133,8 @@ const Index = (): JSX.Element => {
 					</Stack>
 				</CardContent>
 			</Card>
-			{/* <MessageArea /> */}
+			{/* Message area */}
+			<MessageArea />
 		</Box>
 	);
 };
