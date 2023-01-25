@@ -513,6 +513,170 @@ const CandidateEvaluation = () => {
               </ul>
             </div>
           </div>
+          <h4>Would you recommend the candidate to this program?</h4>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              marginTop: "0px",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "10px",
+              }}
+            >
+              Highly unlikely to recommend
+            </p>
+            <p
+              style={{
+                fontSize: "10px",
+              }}
+            >
+              Highly likely to recommend
+            </p>
+          </div>
+          <ul
+            style={{
+              listStyle: "none",
+              display: "flex",
+              width: "100%",
+              paddingInlineStart: "0px",
+              color: "white",
+            }}
+          >
+            <li
+              style={{
+                padding: "8px 21.2px",
+                backgroundColor: "#B72224",
+                borderRadius: " 6px",
+              }}
+            >
+              0
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#D52029",
+                borderRadius: " 6px",
+              }}
+            >
+              1
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#E95223",
+                borderRadius: " 6px",
+              }}
+            >
+              2
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#EA6F22",
+                borderRadius: " 6px",
+              }}
+            >
+              3
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#F6A726",
+                borderRadius: " 6px",
+              }}
+            >
+              4
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#FDC729",
+                borderRadius: " 6px",
+              }}
+            >
+              5
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#EBDB0A",
+                borderRadius: " 6px",
+              }}
+            >
+              6
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#E5E044",
+                borderRadius: " 6px",
+              }}
+            >
+              7
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#C2D234",
+                borderRadius: " 6px",
+              }}
+            >
+              8
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#AEC93C",
+                borderRadius: " 6px",
+              }}
+            >
+              9
+            </li>
+            <li
+              style={{
+                padding: "8px 21.2px",
+                marginLeft: "12px",
+                backgroundColor: "#66B44E",
+                borderRadius: " 6px",
+              }}
+            >
+              10
+            </li>
+          </ul>
+          <h4>Evaluator’s note (optional)</h4>
+          <textarea
+            name=""
+            style={{
+              height: "125px",
+              border: "1px solid #BDBDBD",
+              boxShadow: "2px 2px 3px rgba(209, 209, 233, 0.3)",
+              borderRadius: "5px",
+            }}
+          ></textarea>
+          <button
+            style={{
+              backgroundColor: "#22215B",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+              height: "40px",
+              marginTop: "25px",
+            }}
+          >
+            Submit
+          </button>
         </Stack>
       </Stack>
     </Box>
