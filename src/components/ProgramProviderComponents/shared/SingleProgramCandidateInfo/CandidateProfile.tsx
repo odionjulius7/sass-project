@@ -10,38 +10,6 @@ const CandidateProfile = () => {
         width: "100%",
       }}
     >
-      {" "}
-      {/* <Grid
-        container
-        width="1%"
-        direction="row"
-        justifyContent="space-evenly"
-        alignItems="center"
-        spacing={{ xs: 2, md: 3 }}
-        columnSpacing={{ xs: 1, sm: 1, md: 0 }}
-      >
-        <Grid
-          item
-          xs={6}
-          sx={{
-            display: "flex",
-            boxShadow: "0px 0px 33px rgba(97, 97, 97, 0.13)",
-            borderRadius: "20px",
-          }}
-          justifyContent="space-between"
-        >
-          
-        </Grid>
-        <Grid item xs={6} sx={{}}>
-          <p>Follow</p>
-        </Grid>
-        <Grid item xs={6} sx={{}}>
-          <p>Follow</p>
-        </Grid>
-        <Grid item xs={6} sx={{}}>
-          <p>Follow</p>
-        </Grid>
-      </Grid> */}
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 1, sm: 2, md: 2 }}
@@ -52,9 +20,7 @@ const CandidateProfile = () => {
             boxShadow: "0px 0px 33px rgba(97, 97, 97, 0.13)",
             borderRadius: "20px",
             width: "50%",
-            padding: "1px 30px",
-
-            // alignItems: "center",
+            padding: "1px 30px 30px 30px",
           }}
         >
           <div
@@ -70,7 +36,6 @@ const CandidateProfile = () => {
                 display: "flex",
                 width: "20%",
                 justifyContent: "space-between",
-                //   height: "25px",
                 margin: "auto 0 auto",
               }}
             >
@@ -106,8 +71,6 @@ const CandidateProfile = () => {
             boxShadow: "0px 0px 33px rgba(97, 97, 97, 0.13)",
             borderRadius: "20px",
             width: "50%",
-
-            // alignItems: "center",
           }}
         >
           <div
@@ -123,7 +86,6 @@ const CandidateProfile = () => {
               style={{
                 width: "10%",
                 justifyContent: "space-between",
-                //   height: "25px",
                 margin: "auto 0 auto",
               }}
             >
@@ -162,7 +124,6 @@ const CandidateProfile = () => {
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={{ xs: 1, sm: 2, md: 2 }}
-        sx={{}}
       >
         <div
           style={{
@@ -227,8 +188,7 @@ const CandidateProfile = () => {
             boxShadow: "0px 0px 33px rgba(97, 97, 97, 0.13)",
             borderRadius: "20px",
             width: "50%",
-
-            // alignItems: "center",
+            paddingBottom: "30px",
           }}
         >
           <div
@@ -244,7 +204,6 @@ const CandidateProfile = () => {
               style={{
                 width: "10%",
                 justifyContent: "space-between",
-                //   height: "25px",
                 margin: "auto 0 auto",
               }}
             >
@@ -282,6 +241,11 @@ const CandidateProfile = () => {
               </p>
             </div>
           </div>
+        </div>
+      </Stack>
+      <Stack>
+        <div>
+          <p></p>
         </div>
       </Stack>
     </Box>
