@@ -5,6 +5,7 @@ import CandidateTabs from "./CandidateTabs";
 import { useState } from "react";
 import CandidateVideo from "./CandidateVideo";
 import CandidateEvaluation from "./CandidateEvaluation";
+import CandidateProfile from "./CandidateProfile";
 
 const SingleProgramCandidateNav = () => {
   const [currentTab, setCurrentTab] = useState<number>(1);
@@ -23,7 +24,8 @@ const SingleProgramCandidateNav = () => {
         }}
       />
       {/* <CandidateVideo /> */}
-      <CandidateEvaluation />
+      {/* <CandidateEvaluation /> */}
+      <CandidateProfile />
     </Box>
   );
 };
