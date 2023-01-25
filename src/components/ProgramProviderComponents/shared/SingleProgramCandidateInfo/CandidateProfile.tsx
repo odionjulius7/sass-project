@@ -246,6 +246,7 @@ const CandidateProfile = () => {
       <Stack>
         <div>
           <p></p>
+          <div></div>
         </div>
       </Stack>
     </Box>
