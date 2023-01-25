@@ -124,7 +124,7 @@ const Index = (): JSX.Element => {
 									{"Added by Niran"} | {"2023.01.15"}
 								</Typography>
 								<Button size="small" sx={{ color: "error.main", fontSize: 15 }}>
-									Delete video
+									Delete note
 								</Button>
 							</Box>
 						</Box>
@@ -179,7 +179,7 @@ const Index = (): JSX.Element => {
 									{"Added by Kit"} | {"2023.01.20"}
 								</Typography>
 								<Button size="small" sx={{ color: "error.main", fontSize: 15 }}>
-									Delete video
+									Delete note
 								</Button>
 							</Box>
 						</Box>
