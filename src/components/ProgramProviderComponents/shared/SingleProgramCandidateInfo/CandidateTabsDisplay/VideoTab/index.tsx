@@ -17,7 +17,7 @@ const Index = (): JSX.Element => {
 					<Grid item xs={4}>
 						<Button
 							startIcon={<Add />}
-							sx={{ color: "primary.main", fontSize: 15 }}>
+							sx={{ color: "secondary", fontSize: 15 }}>
 							Request video
 						</Button>
 					</Grid>

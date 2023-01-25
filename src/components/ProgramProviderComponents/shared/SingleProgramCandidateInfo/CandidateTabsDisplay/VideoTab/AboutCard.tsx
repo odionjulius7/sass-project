@@ -34,7 +34,7 @@ const AboutYourselfCard = (): JSX.Element => {
 					</Typography>
 					<ToggleButtonGroup>
 						{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => (
-							<ToggleButton sx={{ px: 2 }} value={value}>
+							<ToggleButton key={value} sx={{ px: 2 }} value={value}>
 								{value}
 							</ToggleButton>
 						))}
